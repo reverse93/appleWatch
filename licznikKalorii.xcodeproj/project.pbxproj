@@ -1,0 +1,702 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		079329611B63AE0D005F578A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079329601B63AE0D005F578A /* AppDelegate.swift */; };
+		079329641B63AE0D005F578A /* licznikKalorii.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 079329621B63AE0D005F578A /* licznikKalorii.xcdatamodeld */; };
+		079329661B63AE0D005F578A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079329651B63AE0D005F578A /* ViewController.swift */; };
+		079329691B63AE0D005F578A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 079329671B63AE0D005F578A /* Main.storyboard */; };
+		0793296B1B63AE0D005F578A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0793296A1B63AE0D005F578A /* Images.xcassets */; };
+		0793296E1B63AE0D005F578A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0793296C1B63AE0D005F578A /* LaunchScreen.xib */; };
+		0793297A1B63AE0E005F578A /* licznikKaloriiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079329791B63AE0E005F578A /* licznikKaloriiTests.swift */; };
+		0793298D1B63AE22005F578A /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0793298C1B63AE22005F578A /* InterfaceController.swift */; };
+		0793298F1B63AE22005F578A /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0793298E1B63AE22005F578A /* NotificationController.swift */; };
+		079329911B63AE22005F578A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 079329901B63AE22005F578A /* Images.xcassets */; };
+		079329951B63AE22005F578A /* licznikKalorii WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 079329941B63AE22005F578A /* licznikKalorii WatchKit App.app */; };
+		0793299D1B63AE22005F578A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0793299B1B63AE22005F578A /* Interface.storyboard */; };
+		0793299F1B63AE22005F578A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0793299E1B63AE22005F578A /* Images.xcassets */; };
+		079329A21B63AE22005F578A /* licznikKalorii WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 079329871B63AE22005F578A /* licznikKalorii WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		079329741B63AE0E005F578A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 079329531B63AE0D005F578A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0793295A1B63AE0D005F578A;
+			remoteInfo = licznikKalorii;
+		};
+		079329961B63AE22005F578A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 079329531B63AE0D005F578A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 079329931B63AE22005F578A;
+			remoteInfo = "licznikKalorii WatchKit App";
+		};
+		079329A01B63AE22005F578A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 079329531B63AE0D005F578A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 079329861B63AE22005F578A;
+			remoteInfo = "licznikKalorii WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		079329A91B63AE22005F578A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				079329A21B63AE22005F578A /* licznikKalorii WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0793295B1B63AE0D005F578A /* licznikKalorii.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = licznikKalorii.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0793295F1B63AE0D005F578A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		079329601B63AE0D005F578A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		079329631B63AE0D005F578A /* licznikKalorii.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = licznikKalorii.xcdatamodel; sourceTree = "<group>"; };
+		079329651B63AE0D005F578A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		079329681B63AE0D005F578A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0793296A1B63AE0D005F578A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0793296D1B63AE0D005F578A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		079329731B63AE0E005F578A /* licznikKaloriiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = licznikKaloriiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		079329781B63AE0E005F578A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		079329791B63AE0E005F578A /* licznikKaloriiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = licznikKaloriiTests.swift; sourceTree = "<group>"; };
+		079329871B63AE22005F578A /* licznikKalorii WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "licznikKalorii WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0793298A1B63AE22005F578A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0793298B1B63AE22005F578A /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		0793298C1B63AE22005F578A /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		0793298E1B63AE22005F578A /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		079329901B63AE22005F578A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		079329941B63AE22005F578A /* licznikKalorii WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "licznikKalorii WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0793299A1B63AE22005F578A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0793299C1B63AE22005F578A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		0793299E1B63AE22005F578A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		079329581B63AE0D005F578A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		079329701B63AE0E005F578A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		079329841B63AE22005F578A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		079329521B63AE0D005F578A = {
+			isa = PBXGroup;
+			children = (
+				0793295D1B63AE0D005F578A /* licznikKalorii */,
+				079329761B63AE0E005F578A /* licznikKaloriiTests */,
+				079329881B63AE22005F578A /* licznikKalorii WatchKit Extension */,
+				079329981B63AE22005F578A /* licznikKalorii WatchKit App */,
+				0793295C1B63AE0D005F578A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0793295C1B63AE0D005F578A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0793295B1B63AE0D005F578A /* licznikKalorii.app */,
+				079329731B63AE0E005F578A /* licznikKaloriiTests.xctest */,
+				079329871B63AE22005F578A /* licznikKalorii WatchKit Extension.appex */,
+				079329941B63AE22005F578A /* licznikKalorii WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0793295D1B63AE0D005F578A /* licznikKalorii */ = {
+			isa = PBXGroup;
+			children = (
+				079329601B63AE0D005F578A /* AppDelegate.swift */,
+				079329651B63AE0D005F578A /* ViewController.swift */,
+				079329671B63AE0D005F578A /* Main.storyboard */,
+				0793296A1B63AE0D005F578A /* Images.xcassets */,
+				0793296C1B63AE0D005F578A /* LaunchScreen.xib */,
+				079329621B63AE0D005F578A /* licznikKalorii.xcdatamodeld */,
+				0793295E1B63AE0D005F578A /* Supporting Files */,
+			);
+			path = licznikKalorii;
+			sourceTree = "<group>";
+		};
+		0793295E1B63AE0D005F578A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0793295F1B63AE0D005F578A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		079329761B63AE0E005F578A /* licznikKaloriiTests */ = {
+			isa = PBXGroup;
+			children = (
+				079329791B63AE0E005F578A /* licznikKaloriiTests.swift */,
+				079329771B63AE0E005F578A /* Supporting Files */,
+			);
+			path = licznikKaloriiTests;
+			sourceTree = "<group>";
+		};
+		079329771B63AE0E005F578A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				079329781B63AE0E005F578A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		079329881B63AE22005F578A /* licznikKalorii WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0793298C1B63AE22005F578A /* InterfaceController.swift */,
+				0793298E1B63AE22005F578A /* NotificationController.swift */,
+				079329901B63AE22005F578A /* Images.xcassets */,
+				079329891B63AE22005F578A /* Supporting Files */,
+			);
+			path = "licznikKalorii WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		079329891B63AE22005F578A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0793298A1B63AE22005F578A /* Info.plist */,
+				0793298B1B63AE22005F578A /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		079329981B63AE22005F578A /* licznikKalorii WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				0793299B1B63AE22005F578A /* Interface.storyboard */,
+				0793299E1B63AE22005F578A /* Images.xcassets */,
+				079329991B63AE22005F578A /* Supporting Files */,
+			);
+			path = "licznikKalorii WatchKit App";
+			sourceTree = "<group>";
+		};
+		079329991B63AE22005F578A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0793299A1B63AE22005F578A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0793295A1B63AE0D005F578A /* licznikKalorii */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0793297D1B63AE0E005F578A /* Build configuration list for PBXNativeTarget "licznikKalorii" */;
+			buildPhases = (
+				079329571B63AE0D005F578A /* Sources */,
+				079329581B63AE0D005F578A /* Frameworks */,
+				079329591B63AE0D005F578A /* Resources */,
+				079329A91B63AE22005F578A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				079329A11B63AE22005F578A /* PBXTargetDependency */,
+			);
+			name = licznikKalorii;
+			productName = licznikKalorii;
+			productReference = 0793295B1B63AE0D005F578A /* licznikKalorii.app */;
+			productType = "com.apple.product-type.application";
+		};
+		079329721B63AE0E005F578A /* licznikKaloriiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 079329801B63AE0E005F578A /* Build configuration list for PBXNativeTarget "licznikKaloriiTests" */;
+			buildPhases = (
+				0793296F1B63AE0E005F578A /* Sources */,
+				079329701B63AE0E005F578A /* Frameworks */,
+				079329711B63AE0E005F578A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				079329751B63AE0E005F578A /* PBXTargetDependency */,
+			);
+			name = licznikKaloriiTests;
+			productName = licznikKaloriiTests;
+			productReference = 079329731B63AE0E005F578A /* licznikKaloriiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		079329861B63AE22005F578A /* licznikKalorii WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 079329A61B63AE22005F578A /* Build configuration list for PBXNativeTarget "licznikKalorii WatchKit Extension" */;
+			buildPhases = (
+				079329831B63AE22005F578A /* Sources */,
+				079329841B63AE22005F578A /* Frameworks */,
+				079329851B63AE22005F578A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				079329971B63AE22005F578A /* PBXTargetDependency */,
+			);
+			name = "licznikKalorii WatchKit Extension";
+			productName = "licznikKalorii WatchKit Extension";
+			productReference = 079329871B63AE22005F578A /* licznikKalorii WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		079329931B63AE22005F578A /* licznikKalorii WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 079329A31B63AE22005F578A /* Build configuration list for PBXNativeTarget "licznikKalorii WatchKit App" */;
+			buildPhases = (
+				079329921B63AE22005F578A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "licznikKalorii WatchKit App";
+			productName = "licznikKalorii WatchKit App";
+			productReference = 079329941B63AE22005F578A /* licznikKalorii WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		079329531B63AE0D005F578A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = Appcamp;
+				TargetAttributes = {
+					0793295A1B63AE0D005F578A = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					079329721B63AE0E005F578A = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 0793295A1B63AE0D005F578A;
+					};
+					079329861B63AE22005F578A = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					079329931B63AE22005F578A = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 2B7PA75W9Z;
+					};
+				};
+			};
+			buildConfigurationList = 079329561B63AE0D005F578A /* Build configuration list for PBXProject "licznikKalorii" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 079329521B63AE0D005F578A;
+			productRefGroup = 0793295C1B63AE0D005F578A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0793295A1B63AE0D005F578A /* licznikKalorii */,
+				079329721B63AE0E005F578A /* licznikKaloriiTests */,
+				079329861B63AE22005F578A /* licznikKalorii WatchKit Extension */,
+				079329931B63AE22005F578A /* licznikKalorii WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		079329591B63AE0D005F578A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				079329691B63AE0D005F578A /* Main.storyboard in Resources */,
+				0793296E1B63AE0D005F578A /* LaunchScreen.xib in Resources */,
+				0793296B1B63AE0D005F578A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		079329711B63AE0E005F578A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		079329851B63AE22005F578A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				079329911B63AE22005F578A /* Images.xcassets in Resources */,
+				079329951B63AE22005F578A /* licznikKalorii WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		079329921B63AE22005F578A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0793299D1B63AE22005F578A /* Interface.storyboard in Resources */,
+				0793299F1B63AE22005F578A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		079329571B63AE0D005F578A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				079329661B63AE0D005F578A /* ViewController.swift in Sources */,
+				079329641B63AE0D005F578A /* licznikKalorii.xcdatamodeld in Sources */,
+				079329611B63AE0D005F578A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0793296F1B63AE0E005F578A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0793297A1B63AE0E005F578A /* licznikKaloriiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		079329831B63AE22005F578A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0793298F1B63AE22005F578A /* NotificationController.swift in Sources */,
+				0793298D1B63AE22005F578A /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		079329751B63AE0E005F578A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0793295A1B63AE0D005F578A /* licznikKalorii */;
+			targetProxy = 079329741B63AE0E005F578A /* PBXContainerItemProxy */;
+		};
+		079329971B63AE22005F578A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 079329931B63AE22005F578A /* licznikKalorii WatchKit App */;
+			targetProxy = 079329961B63AE22005F578A /* PBXContainerItemProxy */;
+		};
+		079329A11B63AE22005F578A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 079329861B63AE22005F578A /* licznikKalorii WatchKit Extension */;
+			targetProxy = 079329A01B63AE22005F578A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		079329671B63AE0D005F578A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				079329681B63AE0D005F578A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0793296C1B63AE0D005F578A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0793296D1B63AE0D005F578A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		0793299B1B63AE22005F578A /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0793299C1B63AE22005F578A /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0793297B1B63AE0E005F578A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0793297C1B63AE0E005F578A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0793297E1B63AE0E005F578A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = licznikKalorii/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0793297F1B63AE0E005F578A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = licznikKalorii/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		079329811B63AE0E005F578A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = licznikKaloriiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/licznikKalorii.app/licznikKalorii";
+			};
+			name = Debug;
+		};
+		079329821B63AE0E005F578A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = licznikKaloriiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/licznikKalorii.app/licznikKalorii";
+			};
+			name = Release;
+		};
+		079329A41B63AE22005F578A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = licznikKalorii_WatchKit_Extension;
+				INFOPLIST_FILE = "licznikKalorii WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		079329A51B63AE22005F578A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				IBSC_MODULE = licznikKalorii_WatchKit_Extension;
+				INFOPLIST_FILE = "licznikKalorii WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		079329A71B63AE22005F578A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "licznikKalorii WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		079329A81B63AE22005F578A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "licznikKalorii WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		079329561B63AE0D005F578A /* Build configuration list for PBXProject "licznikKalorii" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0793297B1B63AE0E005F578A /* Debug */,
+				0793297C1B63AE0E005F578A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0793297D1B63AE0E005F578A /* Build configuration list for PBXNativeTarget "licznikKalorii" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0793297E1B63AE0E005F578A /* Debug */,
+				0793297F1B63AE0E005F578A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		079329801B63AE0E005F578A /* Build configuration list for PBXNativeTarget "licznikKaloriiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				079329811B63AE0E005F578A /* Debug */,
+				079329821B63AE0E005F578A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		079329A31B63AE22005F578A /* Build configuration list for PBXNativeTarget "licznikKalorii WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				079329A41B63AE22005F578A /* Debug */,
+				079329A51B63AE22005F578A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		079329A61B63AE22005F578A /* Build configuration list for PBXNativeTarget "licznikKalorii WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				079329A71B63AE22005F578A /* Debug */,
+				079329A81B63AE22005F578A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		079329621B63AE0D005F578A /* licznikKalorii.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				079329631B63AE0D005F578A /* licznikKalorii.xcdatamodel */,
+			);
+			currentVersion = 079329631B63AE0D005F578A /* licznikKalorii.xcdatamodel */;
+			path = licznikKalorii.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 079329531B63AE0D005F578A /* Project object */;
+}

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="licznikKalorii_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="Calories Counter" id="1Dy-Z8-aAT"/>
+                        <label alignment="left" text="100" id="pEW-Wb-hZe"/>
+                        <slider width="1" alignment="left" value="100" maximum="500" steps="20" id="AJU-9O-aWv">
+                            <connections>
+                                <action selector="sliderAction:" destination="AgC-eL-Hgc" id="kKv-a4-qUC"/>
+                            </connections>
+                        </slider>
+                        <group width="1" alignment="left" id="N4t-bu-BsP">
+                            <items>
+                                <button width="65" height="56.5" alignment="left" title="-" id="Q3v-Fs-7nh">
+                                    <connections>
+                                        <action selector="miusButtonTaped" destination="AgC-eL-Hgc" id="dnb-hg-yUc"/>
+                                    </connections>
+                                </button>
+                                <button width="48" alignment="left" title="+" id="Guv-TW-20Q">
+                                    <color key="titleColor" red="0.89094065659999999" green="0.31749728370000002" blue="0.15352359060000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <connections>
+                                        <action selector="plusButtonTaped" destination="AgC-eL-Hgc" id="jgA-uz-J9J"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" title="Hide Slider" id="JyF-9u-sUb">
+                            <connections>
+                                <action selector="HideSlider" destination="AgC-eL-Hgc" id="Wy4-a6-fN5"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Add" id="9ZC-hc-3ce">
+                            <connections>
+                                <action selector="AddAction" destination="AgC-eL-Hgc" id="8sh-XL-9Xs"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="caloriesLabel" destination="pEW-Wb-hZe" id="Rgf-30-LGH"/>
+                        <outlet property="slider" destination="AJU-9O-aWv" id="lxW-Uc-4H4"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="331"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="licznikKalorii_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+    </scenes>
+</document>
